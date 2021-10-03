@@ -1,9 +1,34 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/HomePage",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "主页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			    "path" : "pages/RecordPage",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "记录",
+			        "enablePullDownRefresh": false
+			    }
+		},
+		{
+			    "path" : "pages/AddLogPage",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "添加日志",
+			        "enablePullDownRefresh": false
+			    }
+		},
+		{
+			"path" : "pages/ManagementPage",
+			"style" :
+			{
+				"navigationBarTitleText": "管理",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
