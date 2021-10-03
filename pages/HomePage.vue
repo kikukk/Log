@@ -26,7 +26,7 @@
 
 <script>
 	const DateUtil = require('../utilities/DateUtil.js');
-	const RoomWithStatus = require('../component/RoomWithStatus.vue').default;
+	import RoomWithStatus from '../component/RoomWithStatus.vue';
 	export default {
 		components: {
 			RoomWithStatus,

@@ -27,7 +27,6 @@ module.exports = {
 // 		const pill = {
 // 			name:'test',
 // 			type: 'type1',
-// 			isDeleted: '0',
 // 			isImportant: '0'
 // 		};
 // 		pillService.save(pill);
