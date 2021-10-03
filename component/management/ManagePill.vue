@@ -15,13 +15,13 @@
 
 <script>
     const _ = require('lodash');
-    const DisplayPill = require('./display/DisplayPill').default;
+    import DisplayPill from './display/DisplayPill';
+    const pillService = require('../../service/pillService');
     export default {
         name: "ManagePill",
         components: {DisplayPill},
         data() {
             return {
-                title: 'asdf',
                 type: null,
                 pills: [],
             }
@@ -30,7 +30,8 @@
             this.initData();
         },
         methods: {
-            initData() {
+            async initData() {
+                console.log(await pillService.getAll());
                 this.pills = [
                     {id: 1, name: 'pill1', type: 'type1', important: 1},
                     {id: 2, name: 'pill2', type: 'type1', important: 0},

@@ -12,9 +12,9 @@
 </template>
 
 <script>
-    const ManageBox = require('../component/management/ManageBox').default;
-    const ManagePill = require('../component/management/ManagePill').default;
-    const ManageRoom = require('../component/management/ManageRoom').default;
+   import ManageBox from '../component/management/ManageBox'
+   import ManagePill from '../component/management/ManagePill';
+   import ManageRoom from '../component/management/ManageRoom';
     export default {
         name: "",
         components:{ManageBox,ManagePill,ManageRoom},
