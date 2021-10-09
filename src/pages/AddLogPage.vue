@@ -33,7 +33,7 @@
 
 <script>
 	const _ = require('lodash');
-    const DateUtil = require('utilities/DateUtil');
+    const DateUtil = require('../utilities/DateUtil');
 	export default{
 		data() {
 			return {

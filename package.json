@@ -1,22 +1,39 @@
 {
-  "dependencies": {
-    "@dcloudio/uni-helper-json": "^1.0.13",
-    "element-ui": "^2.15.6",
-    "moment-timezone": "^0.5.33",
-    "uni-simple-router": "^2.0.7"
-  },
   "name": "log",
   "version": "1.0.0",
-  "main": "main.js",
-  "devDependencies": {
-    "@types/html5plus": "^1.0.2",
-    "@types/uni-app": "^1.4.4"
-  },
+  "description": "",
+  "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "main.js",
+  "dependencies": {
+    "@dcloudio/uni-helper-json": "^1.0.13",
+    "@vueuse/core": "^6.1.0",
+    "ant-design-vue": "^1.7.8",
+    "babel-plugin-import": "^1.13.3",
+    "core-js": "^2.6.12",
+    "moment-timezone": "^0.5.33",
+    "uni-simple-router": "^2.0.7"
+  },
+  "devDependencies": {
+    "@types/html5plus": "^1.0.2",
+    "@types/uni-app": "^1.4.4",
+    "babel-plugin-component": "^1.1.1",
+    "vue-cli-plugin-element": "~1.0.1"
+  },
   "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": ""
+  "babel": {
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "ant-design-vue",
+          "libraryDirectory": "es",
+          "style": "css"
+        }
+      ]
+    ]
+  }
 }
